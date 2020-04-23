@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/index.js"></script>
+    <title>Juego de Tateti</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Bienvenidos al juego del Tateti</h1>
+    </header>
+
+    <div class="contenedor-form">
+        <form action="">
+            <fieldset>
+                <legend>Participantes:</legend>
+                <div class="forma-jugadores">
+                    <div>
+                        <label for="jugador1">Jugador 1:</label>
+                        <input type="text" id="jugador1">
+                    </div>
+                    <img src="/cruz.png" alt="cruz">
+                </div>
+                <div class="forma-jugadores">
+                    <div>
+                        <label for="jugador2">Jugador 2:</label>
+                        <input type="text" id="jugador2">
+                    </div>
+                    <img src="/circulo.png" alt="circulo">
+                </div>
+                <div class="forma-jugadores">
+                    <input type="button" value="Iniciar Juego" class="boton" onclick="iniciarJuego()">
+                    <input type="button" name="reset" id="reset" value="Reiniciar Juego" class="boton" onclick="resetGame()">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+    <div class="contenedor contenedor-mensajes">
+        <h3 id="textoTabla">Tabla de juego:</h3>
+    </div>
+    <div class="contenedor contenedor-tabla">
+        <table class="tabla" id="tablajuego">
+            <tr>
+                <td id="1,1" onclick="cambiarCasilla('img1,1')"><img id="img1,1" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="1,2" onclick="cambiarCasilla('img1,2')"><img id="img1,2" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="1,3" onclick="cambiarCasilla('img1,3')"><img id="img1,3" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="2,1" onclick="cambiarCasilla('img2,1')"><img id="img2,1" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="2,2" onclick="cambiarCasilla('img2,2')"><img id="img2,2" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="2,3" onclick="cambiarCasilla('img2,3')"><img id="img2,3" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+            </tr>
+            <tr>
+                <td id="3,1" onclick="cambiarCasilla('img3,1')"><img id="img3,1" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="3,2" onclick="cambiarCasilla('img3,2')"><img id="img3,2" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+                <td id="3,3" onclick="cambiarCasilla('img3,3')"><img id="img3,3" src="" alt="" onclick="cambiarCasilla(this.id)"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
