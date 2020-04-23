@@ -64,7 +64,16 @@ function comprobarjuego(j) {
 }
 
 function reinicio() {
-    document.images.namedItem("img1,1").alt = document.images.namedItem("img1,2").alt = document.images.namedItem("img1,3").alt = document.images.namedItem("img2,1").alt = document.images.namedItem("img2,2").alt = document.images.namedItem("img2,3").alt = document.images.namedItem("img3,1").alt = document.images.namedItem("img3,2").alt = document.images.namedItem("img3,3").alt = "";
+    document.images.namedItem("img1,1").alt = "";
+    document.images.namedItem("img1,2").alt = "";
+    document.images.namedItem("img1,3").alt = "";
+    document.images.namedItem("img2,1").alt = "";
+    document.images.namedItem("img2,2").alt = "";
+    document.images.namedItem("img2,3").alt = "";
+    document.images.namedItem("img3,1").alt = "";
+    document.images.namedItem("img3,2").alt = "";
+    document.images.namedItem("img3,3").alt = "";
+    
     document.images.namedItem("img1,1").src = "";
     document.images.namedItem("img1,2").src = "";
     document.images.namedItem("img1,3").src = "";
