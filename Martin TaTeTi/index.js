@@ -51,9 +51,9 @@ function comprobarjuego(j) {
     if (x11 == x12 && x11 == x13 && x11 != "" || x11 == x21 && x11 == x31 && x11 != "" || x11 == x22 && x11 == x33 && x11 != "" ||
         x21 == x22 && x21 == x23 && x21 != "" || x31 == x32 && x31 == x33 && x31 != "" || x13 == x22 && x13 == x31 && x13 != "" ||
         x12 == x22 && x12 == x32 && x12 != "" || x13 == x23 && x13 == x33 && x13 != "") {
-        document.getElementById("textoTabla").innerHTML = ("Ganaste " + j + "!!");
+        document.getElementById("textoTabla").innerHTML = ("Ganaste " + j + "!! Comiencen de nuevo!!");
         iniciojuego = false;
-        window.HTMLBodyElement
+        reinicio();
     } else {
         if (x11 != "" && x12 != "" && x13 != "" && x21 != "" && x22 != "" && x23 != "" && x31 != "" && x32 != "" && x33 != "") {
             document.getElementById("textoTabla").innerHTML = ("Empate!! Click en Iniciar Juego para volver a comenzar");
